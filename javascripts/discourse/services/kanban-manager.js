@@ -6,9 +6,13 @@ import buildAssignedLists from "../lib/kanban-list-builders/assigned";
 import buildCategoryLists from "../lib/kanban-list-builders/categories";
 import buildTagLists from "../lib/kanban-list-builders/tags";
 
+import { shouldDisplayBoard } from "../juce";
+
 export default class KanbanManager extends Service {
   @service router;
   @service discovery;
+
+  @service currentUser;
 
   @tracked fullscreen;
 
@@ -60,7 +64,7 @@ export default class KanbanManager extends Service {
   }
 
   get active() {
-    return !!this.currentDescriptor;
+    return shouldDisplayBoard(this.currentUser) && !!this.currentDescriptor;
   }
 
   get currentDescriptor() {

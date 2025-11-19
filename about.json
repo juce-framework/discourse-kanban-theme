@@ -1,9 +1,9 @@
 {
-  "name": "Kanban Board",
+  "name": "Kanban Board - JUCE fork",
   "component": true,
-  "license_url": "https://github.com/discourse/discourse-kanban-theme/blob/main/LICENSE",
-  "about_url": "https://meta.discourse.org/t/kanban-board/118164",
-  "authors": "David Taylor",
+  "license_url": "https://github.com/juce-framework/discourse-kanban-theme/blob/main/LICENSE",
+  "about_url": "https://github.com/juce-framework/discourse-kanban-theme",
+  "authors": "JUCE",
   "theme_version": "1.0",
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
